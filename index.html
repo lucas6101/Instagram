@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Instagram</title>
+</head>
+
+<body>
+    <div class="imagens">
+        <img class="celular" src="./assets/celular.png" alt="celular">
+        <img class="img-insta" src="./assets/insta1.png">
+        <img class="img-insta img-2" src="./assets/insta2.png">
+    </div>
+
+    <div class="container">
+
+        <img src="./assets/insta-logo.png" alt="insta-logo">
+
+        <input placeholder="Telefone,nome de usuário ou email" type="text">
+        <input placeholder="Senha" type="password">
+
+        <button>Entrar</button>
+
+        <a class="facebook"><b>Entrar com o Facebook</b></a>
+        <a class="senha">Esqueceu a senha?</a>
+
+        <p>Não tem uma conta?<a class="cadastro">Cadastre-se</a></p>
+        <p>Obtenha o aplicativo</p>
+
+        <img class="link" src="./assets/download (1).png" alt="google">
+        <img class="link2" src="./assets/download.png" alt="apple">
+    </div>
+</body>
+
+<script>
+
+    let imagem = document.querySelector(".img-2")
+
+    setInterval(() => {
+
+        if (imagem.style.opacity == 0) {
+            imagem.style.opacity = 1
+        } else {
+            imagem.style.opacity = 0
+        }
+
+    }, 3000);
+
+</script>
+
+</html>
